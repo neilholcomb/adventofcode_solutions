@@ -1,4 +1,4 @@
-import * as solutions from './day3'
+import * as solutions from './solution'
 import path from 'path'
 
 //get absolute path to our input
