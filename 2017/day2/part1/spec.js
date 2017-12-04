@@ -11,7 +11,7 @@ describe('Day 1 solutions', () => {
     expect(solutions.solution1(inputPath)).toEqual(solution)
   })
 
-  it('should work with solution 2', () => {
-    expect(solutions.solution2(inputPath)).toEqual(solution)
+  it('should work with golf solution', () => {
+    expect(solutions.golf(inputPath)).toEqual(solution)
   })
 })

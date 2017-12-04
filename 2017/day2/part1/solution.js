@@ -38,4 +38,4 @@ export const solution1 = inputPath => {
 
 //one liner solution
 //prettier-ignore
-export const solution2 = i => fs.readFileSync(i,'utf-8').split('\n').map(l=>l.split('\t')).map(r=>r.sort((a,b)=>+a-~~b)).reduce((a,r)=>a+(r[r.length-1]-r[0]),0)
+export const golf = i => fs.readFileSync(i,'utf-8').split('\n').map(l=>l.split('\t')).map(r=>r.sort((a,b)=>+a-~~b)).reduce((a,r)=>a+(r[r.length-1]-r[0]),0)

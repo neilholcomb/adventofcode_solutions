@@ -35,8 +35,5 @@ export const solution1 = puzzle => {
   return answer
 }
 
-/*
-    One line answer
-*/
 //prettier-ignore
-export const solution2 = p=>[...p].map(s=>s==='('?1:-1).reduce((a,s)=>+a+s)
+export const golf = p=>[...p].map(s=>s==='('?1:-1).reduce((a,s)=>+a+s)
