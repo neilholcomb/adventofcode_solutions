@@ -5,7 +5,7 @@ const puzzle =
 
 const answer = 301
 
-describe('Day 1 solutions', () => {
+describe('2016 Day 1 part 1 solutions', () => {
   it('should work with solution 1', () => {
     expect(solutions.solution1(puzzle)).toEqual(answer)
   })

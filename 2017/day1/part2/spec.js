@@ -5,7 +5,7 @@ let captcha =
 
 let solution = 1054
 
-describe('Day 1 solutions', () => {
+describe('2017 Day 1 part 2 solutions', () => {
   it('should work with solution 1', () => {
     expect(solutions.solution1(captcha)).toEqual(solution)
   })

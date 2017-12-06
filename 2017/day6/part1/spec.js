@@ -8,7 +8,7 @@ let testsolution = 5
 let input = [0, 5, 10, 0, 11, 14, 13, 4, 11, 8, 8, 7, 1, 4, 12, 11]
 let solution = 7864
 
-describe('Day 1 solutions', () => {
+describe('2017 Day 6 part 1 solutions', () => {
   it('should work with solution 1', () => {
     expect(solutions.solution1([...testinput])).toEqual(testsolution)
   })

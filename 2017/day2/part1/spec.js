@@ -6,7 +6,7 @@ let inputPath = path.join(__dirname, 'input.txt')
 
 let solution = 45972
 
-describe('Day 1 solutions', () => {
+describe('2017 Day 2 part 1 solutions', () => {
   it('should work with solution 1', () => {
     expect(solutions.solution1(inputPath)).toEqual(solution)
   })

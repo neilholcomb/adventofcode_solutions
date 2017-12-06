@@ -1,7 +1,7 @@
 import path from 'path'
 import * as solutions from './solution'
 
-describe('Day 1 solutions', () => {
+describe('2017 Day 5 part 2 solutions', () => {
   it('should work with solution 1 with test data', () => {
     let inputPath = path.join(__dirname, 'test.txt')
 
