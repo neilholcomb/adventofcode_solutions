@@ -50,6 +50,7 @@ Before you're ready to help them, you need to make sure your information is corr
 export const solution1 = inputPath => {
   let data = fs
     .readFileSync(inputPath, 'utf-8')
+    .trim()
     .split('\n')
     .filter(line => line.includes('->'))
     .map(line => line.split('->'))
@@ -79,6 +80,35 @@ export const solution1 = inputPath => {
       return found ? false : key
     }, false)
   return data
+}
+
+//ideas for solution 2 taken from https://github.com/decay42/adventofcode/tree/master/src/day7
+export const solution2 = inputPath => {
+  let data = fs
+    .readFileSync(inputPath, 'utf-8')
+    .trim()
+    .split('\n')
+    .map(row => {
+      let [, name, weight, children] = /([a-z]+)\s\((\d+)\)(?: -> )?(.+)?/.exec(
+        row
+      )
+      return {
+        name,
+        weight: +weight,
+        children: children ? children.split(/, /) : undefined
+      }
+    })
+    .filter(e => e.children !== undefined)
+    .filter((child, index, nodes) => {
+      let test = nodes.filter(
+        node => (node.children ? node.children.includes(child.name) : false)
+      ).length
+        ? false
+        : true
+      return test
+    })
+
+  return data[0].name
 }
 
 //one liner solution
